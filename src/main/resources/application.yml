@@ -1,0 +1,30 @@
+server:
+   port: 8082
+#eureka:
+#  client:
+#    serviceUrl:
+#      defaultZone: http://localhost:8761/eureka
+# Database configuration
+spring:
+  application:
+    name: payment-service
+  profiles:
+    active: dev
+  config:
+      import: optional:configserver:http://localhost:8888
+#  data:
+#    mongodb:
+#      uri : mongodb://localhost:27017/
+#      database : mongoDB-dev
+#logging:
+logging:
+  file.name: C:/Users/ramlal.dhangar/Training-Project/application-Logs/payment-service.log
+
+#  profiles:
+#    active: prod
+
+
+#  config:
+#    import: "optional:configserver:http://localhost:8083"
+
+
